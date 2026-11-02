@@ -55,8 +55,3 @@ Bộ kiểm thử: **30 PASS, 0 FAIL**. Chi tiết ở `docs/ket_qua_kiem_thu.tx
 Kịch bản minh họa tạo 3 bản ghi trạng thái và 3 yêu cầu bảo trì.
 Sau khi hủy đăng ký, cập nhật thiết bị không làm tăng hai danh sách này.
 
-## Nộp bài
-
-1. Đưa nội dung thư mục dự án lên repository GitHub; không tải `bin/` hoặc `obj/`.
-2. Mở `docs/Bao_cao_LabW08_NgoNgocThai_202418984.docx`, điền URL repository ở dòng Link GitHub.
-3. Nộp báo cáo Word theo yêu cầu của giảng viên.
