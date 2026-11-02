@@ -1,0 +1,31 @@
+LAB W08 - DELEGATE VÀ EVENT
+Ngô Ngọc Thái - 202418984
+
+1. Thay đổi trạng thái
+
+2. Cảnh báo thiết bị
+[Warning] PR01: Mức pin: 19%.
+[Critical] PR01: Mức pin: 0%.
+[BỘ LỌC CRITICAL] PR01
+[Critical] AC01: Điều khiển điều hòa phòng D3-201 không phản hồi.
+[BỘ LỌC CRITICAL] AC01
+[Warning] MC01: Mức pin: 29%.
+[Warning] MC01: Chất lượng tín hiệu: 39%.
+[Critical] MC01: Chất lượng tín hiệu: 0%.
+[BỘ LỌC CRITICAL] MC01
+
+3. Dữ liệu không hợp lệ
+Thiết bị MC01: giá trị 101 không thuộc khoảng 0 đến 100.
+
+4. Lịch sử trạng thái (3)
+02/11/2026 21:54:05: PR01, Available -> Borrowed
+02/11/2026 21:54:05: PR01, Borrowed -> Available
+02/11/2026 21:54:05: AC01, Available -> UnderMaintenance
+
+5. Yêu cầu bảo trì (3)
+Yêu cầu bảo trì PR01: Mức pin: 0%.
+Yêu cầu bảo trì AC01: Điều khiển điều hòa phòng D3-201 không phản hồi.
+Yêu cầu bảo trì MC01: Chất lượng tín hiệu: 0%.
+
+6. Hủy đăng ký
+Sau hủy: 3 nhật ký, 3 yêu cầu bảo trì.

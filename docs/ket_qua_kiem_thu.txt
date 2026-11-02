@@ -1,0 +1,37 @@
+KIỂM THỬ LAB W08 - Ngô Ngọc Thái - 202418984
+PASS | T01 Khởi tạo thiết bị
+PASS | T02 Không có subscriber
+PASS | T03 Gán lại cùng trạng thái
+PASS | T04 Trạng thái và dữ liệu event
+PASS | T05 Từ chối trạng thái enum không hợp lệ
+PASS | T06 Máy chiếu tại ngưỡng 20 và 19
+PASS | T07 Máy chiếu không cảnh báo lặp cùng vùng
+PASS | T08 Máy chiếu cạn pin và cập nhật 0 lặp lại
+PASS | T09 Phục hồi pin và tái cảnh báo
+PASS | T10 Dữ liệu cảnh báo và cập nhật trước event
+PASS | T11 Máy chiếu từ chối pin ngoài khoảng
+PASS | T12 Điều hòa mất phản hồi không lặp
+PASS | T13 Điều hòa phục hồi rồi mất phản hồi
+PASS | T14 Pin micro tại 30 và 29
+PASS | T15 Tín hiệu micro tại 40 và 39
+PASS | T16 Pin và tín hiệu micro độc lập
+PASS | T17 Micro không cảnh báo lặp cùng vùng
+PASS | T18 Micro từ chối dữ liệu ngoài khoảng
+PASS | T19 Bộ lọc delegate chỉ nhận Critical
+PASS | T20 Nhiều subscriber và hủy riêng một handler
+PASS | T21 Bảo trì chỉ nhận mức Critical
+[Critical] P1: Mức pin: 0%.
+PASS | T22 Coordinator đăng ký hai lần không trùng
+PASS | T23 Thiết bị trùng tham chiếu trong danh sách
+PASS | T24 Hủy đăng ký và giữ handler bên ngoài
+PASS | T25 Đăng ký lại sau hủy
+PASS | T26 Dispose hủy mọi handler do coordinator tạo
+PASS | T27 Danh sách log và bảo trì chỉ đọc
+PASS | T28 Subscriber ném lỗi theo cơ chế event đồng bộ
+PASS | T29 Kiểm tra tham số khởi tạo
+[Critical] P1: Mức pin: 0%.
+[Critical] A1: Điều khiển điều hòa phòng D3 không phản hồi.
+[Critical] M1: Chất lượng tín hiệu: 0%.
+PASS | T30 Tích hợp nhiều thiết bị
+
+KẾT QUẢ: 30 PASS, 0 FAIL

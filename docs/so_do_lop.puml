@@ -1,0 +1,45 @@
+@startuml devices
+abstract class TeachingDevice {
+  +Id : string
+  +Name : string
+  +Status : DeviceStatus
+  +StatusChanged : EventHandler<DeviceStatusChangedEventArgs>
+  +AlertRaised : EventHandler<DeviceAlertEventArgs>
+  +ChangeStatus(newStatus)
+  #RaiseAlert(message, severity)
+  #OnStatusChanged(e)
+  #OnAlertRaised(e)
+}
+class ProjectorRemote
+class AirConditionerRemote
+class WirelessMicrophone
+TeachingDevice <|-- ProjectorRemote
+TeachingDevice <|-- AirConditionerRemote
+TeachingDevice <|-- WirelessMicrophone
+EventArgs <|-- DeviceStatusChangedEventArgs
+EventArgs <|-- DeviceAlertEventArgs
+TeachingDevice ..> DeviceStatusChangedEventArgs
+TeachingDevice ..> DeviceAlertEventArgs
+TeachingDevice ..> InvalidDeviceReadingException
+Exception <|-- InvalidDeviceReadingException
+@enduml
+
+@startuml coordinator
+interface IDisposable
+class DeviceMonitoringCoordinator
+class TeachingDevice
+class ConsoleNotificationService
+class DeviceAuditLogger
+class MaintenanceService
+class FilteredAlertSubscriber
+IDisposable <|.. DeviceMonitoringCoordinator
+DeviceMonitoringCoordinator --> "0..*" TeachingDevice : devices
+DeviceMonitoringCoordinator --> "1" ConsoleNotificationService
+DeviceMonitoringCoordinator --> "1" DeviceAuditLogger
+DeviceMonitoringCoordinator --> "1" MaintenanceService
+DeviceMonitoringCoordinator --> "0..1" FilteredAlertSubscriber
+FilteredAlertSubscriber ..> AlertFilter
+FilteredAlertSubscriber ..> DeviceAlertEventArgs
+Program ..> DeviceMonitoringCoordinator
+TestRunner ..> TeachingDevice
+@enduml
